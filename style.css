@@ -1,0 +1,106 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff; /* Branco de fundo */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Menu Responsivo */
+header {
+    background-color: #ff0033; /* Vermelho vibrante */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+#menu ul li a:hover {
+    color: #ffc1cc; /* Rosa claro ao passar o mouse */
+}
+
+/* Seções (Páginas do Slide) */
+.page {
+    min-height: 100vh;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #fce4ec; /* Linha rosa sutil entre páginas */
+}
+
+/* Cores alternadas para dar ritmo visual */
+.page:nth-child(even) {
+    background-color: #fff5f7; /* Rosa bem clarinho */
+}
+
+h1, h2 {
+    color: #d32f2f; /* Vermelho escuro para títulos */
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.bullets {
+    text-align: left;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Botão Interativo */
+#btnInterativo {
+    background-color: #ff0033;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+    }
+    #menu ul {
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+    h1 { font-size: 1.8rem; }
+}
